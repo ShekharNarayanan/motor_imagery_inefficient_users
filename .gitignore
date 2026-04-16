@@ -1,0 +1,10 @@
+data/**
+! data/.gitkeep
+
+# others
+paper.pdf
+gameplan.txt
+
+
+# uv
+.venv
