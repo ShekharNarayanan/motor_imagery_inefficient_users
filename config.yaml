@@ -1,0 +1,5 @@
+# experiment params
+fs : 250
+trial_duration : 8
+total_trials : 40
+num_chans: 16
