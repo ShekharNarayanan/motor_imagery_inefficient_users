@@ -1,5 +1,13 @@
+# paths
+data_calibration : 'data/Raw eeg 2/calibration'
+data_test        : 'data/Raw eeg 2/test'
+
 # experiment params
-fs : 250
-trial_duration : 8
-total_trials : 40
-num_chans: 16
+fs                      : 250
+trial_duration_s        : 8
+total_trials            : 40
+num_chans               : 16
+ignore_participants     : [1, 2, 3, 4, 5, 6, 20, 35, 39, 40, 53, 62, 64]
+filter_bank_range       : [7,30]
+trial_start_time_s      : 1.5
+trial_end_time_s        : 5.0
