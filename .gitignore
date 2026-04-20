@@ -4,6 +4,7 @@ data/**
 # others
 paper.pdf
 gameplan.txt
+__pycache__**
 
 
 # uv
