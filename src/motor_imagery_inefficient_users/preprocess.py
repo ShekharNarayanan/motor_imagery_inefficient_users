@@ -2,14 +2,14 @@
 import pandas as pd
 import numpy as np
 
-def get_epoched_eeg_and_labels(X_continuous:pd.DataFrame, num_chans:int, num_trials:int, trial_start_s:int, trial_end_s:int, fs:int)-> np.ndarray:
+def get_epoched_eeg_and_labels(X_continuous:pd.DataFrame, num_chans:int, num_trials:int, task_start_time_s:int, task_end_time_s:int, fs:int)-> np.ndarray:
     """_summary_
 
     Args:
         X_continuous (pd.DataFrame): _description_
         num_trials (int): _description_
-        trial_start_s (int): _description_
-        trial_end_s (int): _description_
+        task_start_time_s (int): _description_
+        task_end_time_s (int): _description_
         fs (int): _description_
 
     Returns:
@@ -24,9 +24,9 @@ def get_epoched_eeg_and_labels(X_continuous:pd.DataFrame, num_chans:int, num_tri
     X_tmp = np.array(X_tmp)
 
     # compute trial related params
-    trial_start_samples = trial_start_s * fs
-    trial_end_samples   = trial_end_s * fs
-    trial_duration_samples = int(trial_end_samples - trial_start_samples)
+    task_start_time_samples = task_start_time_s * fs
+    task_end_time_samples   = task_end_time_s * fs
+    trial_duration_samples = int(task_end_time_samples - task_start_time_samples)
 
     # initialize epoched matrix
     X_epoched = np.zeros((num_trials, num_chans, trial_duration_samples))
