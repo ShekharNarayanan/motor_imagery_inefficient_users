@@ -2,7 +2,7 @@
 
 This project attempts to reproduce the results of Tibrewal et al 2022. Under active development. The paper essentially tries to show that deep learning based classification of motor imagery data might be more useful than the standard LDA + CSP approach when it comes to BCI inefficient users.
 
-<img src="media/task.png" width=50% height=50%>
+<img src="media/task.png" width=60% height=60%>
 
 More than just reproducing the results of the paper, the repository focuses on showing the users how a BCI pipeline is developed. Including but not limited to:
 1. **Data Preparation**: preprocessing, **restructuring (epoching)** and **artifact removal** of **EEG data**.
@@ -16,7 +16,7 @@ More than just reproducing the results of the paper, the repository focuses on s
 # Current stage:
 
 1. To really understand whats happening under the hood, there is a folder in this repository called `learn_CSP`. This focuses on showing the math and the implementation of the **CSP** technique.
-<img src = "media/difference_covar_matrix.png" width=75% height=75%>
+<img src = "media/difference_covar_matrix.png" width=40% height=40%>
 
 2. Logic wise, the script is ready to be trained on the CSP + LDA technique. Preparing the data (epoching, vectorization) has been done.
 
