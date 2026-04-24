@@ -8,6 +8,15 @@ trial_duration_s        : 8
 num_trials              : 40
 num_chans               : 16
 ignore_participants     : [1, 2, 3, 4, 5, 6, 20, 35, 39, 40, 53, 62, 64]
-filter_bank_range       : [7,30]
-task_start_time_s      : 1.0
-task_end_time_s        : 5.0
+task_start_time_s       : 1.0
+task_end_time_s         : 5.0
+
+# analysis: CSP + LDA
+num_csp_components          : 4
+filter_bank_bands       : [
+                            [7, 12],   # mu / lower alpha
+                            [12, 16],  # lower beta
+                            [16, 20],  # mid beta
+                            [20, 24],  # mid beta
+                            [24, 30],  # upper beta
+                        ]

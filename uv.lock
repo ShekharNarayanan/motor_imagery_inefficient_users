@@ -1515,6 +1515,7 @@ name = "motor-imagery-inefficient-users"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "joblib" },
     { name = "keras" },
     { name = "matplotlib" },
     { name = "mlflow" },
@@ -1533,6 +1534,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "joblib", specifier = ">=1.5.3" },
     { name = "keras", specifier = ">=3.14.0" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "mlflow", specifier = ">=3.11.1" },

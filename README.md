@@ -21,6 +21,6 @@ More than just reproducing the results of the paper, the repository focuses on s
 2. Logic wise, the script is ready to be trained on the CSP + LDA technique. Preparing the data (epoching, vectorization) has been done.
 
 # Next steps:
-1. Add the filter-bank technique to existing CSP methods.
-2. Train the calibration data on the CSP + LDA method and evaluate training performance using chronological cross validation. 
+1. Add the filter-bank technique to existing CSP methods. **DONE**
+2. Train the calibration data on the CSP + LDA method and evaluate training performance using chronological cross validation. **DONE**
 3. Add another folder explaining the essential math and implementation behind LDA.
