@@ -5,6 +5,8 @@ data/**
 paper.pdf
 gameplan.txt
 __pycache__**
+csp_lda_models/*
+!csp_lda_models/.gitkeep
 
 
 # uv
