@@ -51,5 +51,5 @@ def get_participant_ids(data_path:str)->list[int]:
             pid = int(m.group(1))  # extracted participant ID
             pids.append(pid)
     
-    return pids
+    return sorted(pids)
 

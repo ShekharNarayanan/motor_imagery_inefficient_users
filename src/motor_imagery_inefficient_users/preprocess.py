@@ -2,11 +2,11 @@
 import pandas as pd
 import numpy as np
 
-def get_epoched_eeg_and_labels(X_continuous:pd.DataFrame, num_chans:int, num_trials:int, task_start_time_s:int, task_end_time_s:int, fs:int)-> np.ndarray:
+def get_epoched_eeg_and_labels(eeg_df:pd.DataFrame, num_chans:int, num_trials:int, task_start_time_s:int, task_end_time_s:int, fs:int)-> np.ndarray:
     """_summary_
 
     Args:
-        X_continuous (pd.DataFrame): _description_
+        eeg_df (pd.DataFrame): _description_
         num_trials (int): _description_
         task_start_time_s (int): _description_
         task_end_time_s (int): _description_
@@ -16,8 +16,8 @@ def get_epoched_eeg_and_labels(X_continuous:pd.DataFrame, num_chans:int, num_tri
         np.ndarray: _description_
     """
     # prepare data and keep only relevant columns
-    X_tmp = X_continuous.copy()
-    y_tmp = np.array(X_continuous["class"])
+    X_tmp = eeg_df.copy()
+    y_tmp = np.array(eeg_df["class"])
 
     # keep only channel data
     X_tmp.drop(columns = ["TimeStamp","trial","class"], inplace =True)
