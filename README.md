@@ -11,7 +11,7 @@ I want to develop this repository as a walk through of the paper rather than jus
 
 2. **Code for the pipeline**: the code in this repository is written from scratch and avoids using the repository referred to in the paper. The idea is to learn and not follow a plug and play style. All params used are directly in correspondence from the paper.
 
-3. **Deep dive into Machine learnin/ Deep Understandingg**: again, I want to avoid using only wrappers of popular libraries wherever feasible. I try to do this by working out the math and implement building blocks of the techniques used. Folders with the `understand` prefix are used for this. They contain math behind the methods and implementations in jupyter notebooks.
+3. **Deep dive into Machine learning/ Deep Learning**: again, I want to avoid using only wrappers of popular libraries wherever feasible. I try to do this by working out the math and implement building blocks of the techniques used. Folders with the `understand` prefix are used for this. They contain math behind the methods and implementations in jupyter notebooks.
 
 4. **Software development standards**: aim is to keep the code as clean as possible. Modularized, documented, version controlled and easy entry points to crucial scripts. 
 
