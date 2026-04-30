@@ -3,17 +3,18 @@ import pandas as pd
 import numpy as np
 
 def get_epoched_eeg_and_labels(eeg_df:pd.DataFrame, num_chans:int, num_trials:int, task_start_time_s:int, task_end_time_s:int, fs:int)-> np.ndarray:
-    """_summary_
+    """
+    Get epoched eeg data and trial labels from raw data frame.
 
     Args:
-        eeg_df (pd.DataFrame): _description_
-        num_trials (int): _description_
-        task_start_time_s (int): _description_
-        task_end_time_s (int): _description_
-        fs (int): _description_
+        eeg_df (pd.DataFrame): data frame containing data from all channels and trial info.
+        num_trials (int): total number trials 
+        task_start_time_s (int): time (s) at which MI task starts
+        task_end_time_s (int): time (s) at which MI task ends
+        fs (int): sampling freq
 
     Returns:
-        np.ndarray: _description_
+        np.ndarray: epoched eeg data and labels
     """
     # prepare data and keep only relevant columns
     X_tmp = eeg_df.copy()

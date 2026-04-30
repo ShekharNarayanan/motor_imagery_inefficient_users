@@ -8,11 +8,11 @@ def get_calibration_data_for_participant(calibration_data_path:str, participant_
     """Get calibration data for participant. 
 
     Args:
-        calibration_data_path (str): _description_
-        participant_id (int): _description_
+        calibration_data_path (str): path for calibration data
+        participant_id (int): id of the participant
 
     Returns:
-        pd.DataFrame: _description_
+        pd.DataFrame: data frame containing time-series eeg data for all channels and trial info.
     """
 
     pid_data = pd.read_csv(f"{calibration_data_path}/S{participant_id}_eeg_Calibration.csv")
@@ -20,27 +20,27 @@ def get_calibration_data_for_participant(calibration_data_path:str, participant_
     return pid_data
 
 def get_test_data_for_participant(test_data_path:str, participant_id:int)->pd.DataFrame:
-    """_summary_
+    """Get test data for participant. 
 
     Args:
-        test_data_path (str): _description_
-        particpant_id (int): _description_
+        test_data_path (str): path for test data
+        participant_id (int): id of the participant
 
     Returns:
-        pd.DataFrame: _description_
+        pd.DataFrame: data frame containing time-series eeg data for all channels and trial info.
     """
     pid_data = pd.read_csv(f"{test_data_path}/Subject{participant_id}_eeg_Calibration.csv")
 
     return pid_data
 
 def get_participant_ids(data_path:str)->list[int]:
-    """_summary_
+    """Gets all participant ids in a given folder. Accomodates the 'S{id}' and the 'Subject{id}' formats.
 
     Args:
-        data_path (str): _description_
+        data_path (str): folder for which participant ids need to be found.
 
     Returns:
-        np.ndarray: _description_
+        np.ndarray: array of participant ids
     """
     pattern = r"(?:S|Subject)(\d+)_eeg.*\.csv"  # note the capturing group
     
