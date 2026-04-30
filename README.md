@@ -23,7 +23,7 @@ More than just reproducing the results of the paper, the repository focuses on s
 
 ---
 
-## Current Stage: Stage 3 — CSP + LDA Pipeline
+## Current Stage: Stage 3: CSP + LDA Pipeline
 
 ---
 
