@@ -25,9 +25,7 @@ def filter_bank_CSP(
     Args:
         X (np.ndarray): epoched eeg data
         y (np.ndarray): labels
-        bands (tuple[list]): a tuple containing lists of different frequency bands f_i. f_i = [low, high]
         fs (int): sampling frequency of eeg data
-        csp_components (int): number of csp components to be computed.
         training (bool, optional): set to True if filter bank CSP is applied during training. Defaults to True.
         all_csps (list, optional): csp weights computed using .fit(). Defaults to None.
         csp_params (dict): parameters for the filter used. contains the filter bands, number of components, filter category, order and type

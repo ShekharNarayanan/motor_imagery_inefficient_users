@@ -65,9 +65,7 @@ def csp_lda_final_model(
     Args:
         X_epoched (np.ndarray): epoched eeg data
         y (list): labels for each trial
-        freq_bands (list): list of (low, high) tuples defining frequency band
         fs (int): sampling freq
-        csp_components (int): number of CSP components per band
         csp_params (dict): parameters for the filter used. contains the filter bands, number of components, filter category, order and type
 
     """
