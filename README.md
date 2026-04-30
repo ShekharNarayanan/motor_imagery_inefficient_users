@@ -4,7 +4,6 @@ Motor imagery is a paradigm used for developing brain-computer interfaces (BCIs)
 
 Under active development.
 
-<img src="media/task.png" width=60% height=60%>
 
 I want to develop this repository as a walk through of the paper rather than just reproducing results. Some of the things I want to focus on are:
 
@@ -17,6 +16,13 @@ I want to develop this repository as a walk through of the paper rather than jus
 4. **Software development standards**: aim is to keep the code as clean as possible. Modularized, documented, version controlled and easy entry points to crucial scripts. 
 
 If you think I could use some feedback, feel free to open an issue :D
+
+<p float="left">
+  <img src="media/task.png" width=60% height=60% />
+  <img src="media/ML_vs_CNN.png" width=60% height=60%/> 
+
+</p>
+
 
 
 
