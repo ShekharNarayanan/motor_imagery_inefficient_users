@@ -1,4 +1,4 @@
-# Motor Imagery BCI — Reproducing Tibrewal et al. (2022)
+# Motor Imagery BCI : Reproducing Tibrewal et al. (2022)
 This project attempts to reproduce the results of Tibrewal et al. 2022. Under active development. The paper essentially tries to show that deep learning based classification of motor imagery data might be more useful than the standard LDA + CSP approach when it comes to BCI inefficient users.
 
 <img src="media/task.png" width=60% height=60%>
