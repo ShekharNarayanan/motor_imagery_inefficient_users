@@ -40,7 +40,7 @@ If you think I could use some feedback, feel free to open an issue :D
 ---
 
 ## Current Stage: 3: CSP + LDA Pipeline (done), Understanding math/implementation of LDA (pending)
-
+<img src="media/lda_implementation.png" width=60% height=60% />
 
 
 ## 1: Data Preparation
@@ -60,8 +60,9 @@ Refer to `understand_CSP` folder for a more in-depth understanding of Common Spa
 - [x] Spatial filter extraction and log-variance features
 
 ## 3: Understanding LDA 
-Work for `understand_LDA` folder in progress.
-- [ ] Add folder explaining the essential math and implementation behind LDA
+Work for `understand_LDA` folder in progress. Implementation finished, math/logic pending.
+- [x] Add folder implementation behind LDA
+- [ ] Explain essential math
 
 ## 4: CSP - LDA Pipeline
 - [x] Add filter-bank technique to existing CSP methods
