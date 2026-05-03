@@ -1,6 +1,7 @@
 # paths
 data_calibration : 'data/Raw eeg 2/calibration'
 data_test        : 'data/Raw eeg 2/test'
+csp_lda_models   : 'csp_lda_models'
 
 # experiment params
 fs                      : 250
