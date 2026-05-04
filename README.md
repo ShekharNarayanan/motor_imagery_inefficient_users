@@ -1,6 +1,6 @@
 # Motor Imagery BCI : Reproducing Tibrewal et al. (2022)
 
-Motor imagery is a paradigm used for developing brain-computer interfaces (BCIs). This project attempts to reproduce the results of Tibrewal et al. 2022. In essence, the authors show that deep understanding based classification techniques are more suited than traditional ML methods when it comes to inefficient BCI users.
+Motor imagery is a paradigm used for developing brain-computer interfaces (BCIs). This project attempts to reproduce the results of Tibrewal et al. 2022. In essence, the authors show that deep Math and Implementation based classification techniques are more suited than traditional ML methods when it comes to inefficient BCI users.
 
 Under active development.
 
@@ -24,23 +24,22 @@ If you think I could use some feedback, feel free to open an issue :D
 </p>
 
 
-
-
 ## Index
 **Project Stages**
 1. [Data Preparation](#1-data-preparation)
-2. [Understanding CSP](#2-understanding-csp)
-3. [Understanding LDA](#3-understanding-lda)
+2. [Math and Implementation CSP](#2-math-and-implementation-csp)
+3. [Math and Implementation LDA](#3-math-and-implementation-lda)
 4. [CSP + LDA Pipeline](#4-csp-lda-pipeline)
-5. [Understanding CNNs](#5-understanding-cnns)
+5. [Math and Implementation CNNs](#5-Math and Implementation-cnns)
+5. [Math and Implementation CNNs](#5-Math and Implementation-cnns)
 
 **Setup and Usage**
 - coming soon
 
 ---
 
-## Current Stage: 3: CSP + LDA Pipeline (done), Understanding math/implementation of LDA (pending)
-<img src="media/lda_implementation.png" width=60% height=60% />
+## Current Stage: 5: Implement CNNs on Calibration 
+
 
 
 ## 1: Data Preparation
@@ -49,9 +48,8 @@ If you think I could use some feedback, feel free to open an issue :D
 - [x] Extract labels
 
 
-
-## 2: Understanding CSP
-Refer to `understand_CSP` folder for a more in-depth understanding of Common Spatial Patterns.
+## 2: Math and Implementation CSP
+Refer to `understand_CSP` folder for a more in-depth understanding of of Common Spatial Patterns.
 
 <img src="media/difference_covar_matrix.png" width=40% height=40%>
 
@@ -59,16 +57,20 @@ Refer to `understand_CSP` folder for a more in-depth understanding of Common Spa
 - [x] Generalized eigenvalue decomposition
 - [x] Spatial filter extraction and log-variance features
 
-## 3: Understanding LDA 
-Work for `understand_LDA` folder in progress. Implementation finished, math/logic pending.
+## 3: Math and Implementation LDA 
+Refer to `understand_LDA` folder for indepth knowledge behind LDA. 
+
 - [x] Add folder implementation behind LDA
-- [ ] Explain essential math
+- [x] Explain essential math
+
+<img src="media/lda_implementation.png" width=60% height=60% />
 
 ## 4: CSP - LDA Pipeline
 - [x] Add filter-bank technique to existing CSP methods
 - [x] Train calibration data on CSP + LDA and evaluate using stratified k-fold cross validation
 
 
-## 5: Understanding CNNs
-- [ ] Stage not reached
+## 5: Math and Implementation CNNs
+- [ ] CNNs Logic, Math and Toy implementation
+- [ ] Train CNNs on calibration data
 
