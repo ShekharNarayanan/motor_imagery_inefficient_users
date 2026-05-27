@@ -28,24 +28,21 @@ def get_epoched_eeg_and_labels(eeg_df:pd.DataFrame, num_chans:int, num_trials:in
     task_start_time_samples = task_start_time_s * fs
     task_end_time_samples   = task_end_time_s * fs
     trial_duration_samples = int(task_end_time_samples - task_start_time_samples)
+    assert trial_duration_samples != 0, "Please check entered values for trial start and trial end times given to the function"
 
     # initialize epoched matrix
     X_epoched = np.zeros((num_trials, num_chans, trial_duration_samples))
-    y = np.zeros((num_trials, trial_duration_samples))
+    y = np.zeros((num_trials, ))
 
     # prepare labels
-    y_tmp[y_tmp == -1] = 0 # rename classes from 1 and -1 to 1 and 0
-    
+    y_tmp[y_tmp == -1] = 0 # rename classes from 1 and -1 to 1 and 0    
 
     for i_trial in range(num_trials):
         start = i_trial * trial_duration_samples
         end = start + trial_duration_samples
         X_epoched[i_trial,:,:] =  X_tmp[start:end,:].T
-        y[i_trial,:] = y_tmp[start:end]
+        y[i_trial] = np.unique(y_tmp[start:end])[0]
 
-    # Check every row has all-same values
-    assert (y == y[:, [0]]).all(), "Some rows have differing values"
-    y = y[:,0] # take the 40 x 1 vector that contains the labels
 
     assert X_epoched.shape[0] == len(y), "dims of X_epoched and labels dont match"
 
