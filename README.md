@@ -68,6 +68,7 @@ Refer to `understand_LDA` folder for indepth knowledge behind LDA.
 ## 4: CSP - LDA Pipeline
 - [x] Add filter-bank technique to existing CSP methods
 - [x] Train calibration data on CSP + LDA and evaluate using stratified k-fold cross validation
+- [ ] Evaluate results of fitted models
 
 
 ## 5: Math and Implementation CNNs
