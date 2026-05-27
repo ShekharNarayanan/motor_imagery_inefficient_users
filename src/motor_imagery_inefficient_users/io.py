@@ -29,9 +29,12 @@ def get_test_data_for_participant(test_data_path:str, participant_id:int)->pd.Da
     Returns:
         pd.DataFrame: data frame containing time-series eeg data for all channels and trial info.
     """
-    pid_data = pd.read_csv(f"{test_data_path}/Subject{participant_id}_eeg_Calibration.csv")
 
-    return pid_data
+    pattern = rf"(?:Subject)({participant_id})_eeg.*\.csv"
+    matches = [f for f in Path(test_data_path).iterdir() if re.match(pattern, f.name)]
+
+
+    return matches
 
 def get_participant_ids(data_path:str)->list[int]:
     """Gets all participant ids in a given folder. Accomodates the 'S{id}' and the 'Subject{id}' formats.
