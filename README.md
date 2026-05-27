@@ -1,17 +1,17 @@
 # Motor Imagery BCI : Reproducing Tibrewal et al. (2022)
 
-Motor imagery is a paradigm used for developing brain-computer interfaces (BCIs). This project attempts to reproduce the results of Tibrewal et al. 2022. In essence, the authors show that deep Math and Implementation based classification techniques are more suited than traditional ML methods when it comes to inefficient BCI users.
+Motor imagery is a paradigm used for developing brain-computer interfaces (BCIs). This project attempts to reproduce the results of Tibrewal et al. 2022. In essence, the authors show that deep learning based classification techniques are more suited than traditional ML methods when it comes to inefficient BCI users.
 
 Under active development.
 
 
 I want to develop this repository as a walk through of the paper rather than just reproducing results. Some of the things I want to focus on are:
 
-1. **Building intuition for BCI pipelines**: find ways to explain the pipeline involved for BCI experiments more intuitively with minimal technical details. I want to make fascinating scientific ideas accessible and digestible for everyone. This includes writing non-technical briefs about every of the project found in the `intuition` folder.
+1. **Building intuition for BCI pipelines**: find ways to explain the pipeline involved for BCI experiments more intuitively with minimal technical details. I want to make fascinating scientific ideas accessible and digestible for everyone. This includes writing non-technical briefs about different aspects of the paper and BCIs. Content can be found in the `intuition` folder.
 
-2. **Code for the pipeline**: the code in this repository is written from scratch and avoids using the repository referred to in the paper. The idea is to learn and not follow a plug and play style. All params used are directly in correspondence from the paper.
+2. **Code for the pipeline**: the code in this repository is written from scratch and avoids using the repository referred to in the paper unless neccessary. The idea is to learn and not follow a plug and play style. All params used are  in correspondence with the paper.
 
-3. **Deep dive into Machine learning/ Deep Learning**: again, I want to avoid using only wrappers of popular libraries wherever feasible. I try to do this by working out the math and implement building blocks of the techniques used. Folders with the `understand` prefix are used for this. They contain math behind the methods and implementations in jupyter notebooks.
+3. **Deep dive into Machine learning/ Deep Learning**: I want to avoid using only wrappers of popular libraries wherever feasible. I try to do this by working out the math and implement building blocks of the techniques used. Folders with the `understand` prefix are used for this. They contain math behind the methods and implementations in jupyter notebooks.
 
 4. **Software development standards**: aim is to keep the code as clean as possible. Modularized, documented, version controlled and easy entry points to crucial scripts. 
 
@@ -30,15 +30,15 @@ If you think I could use some feedback, feel free to open an issue :D
 2. [Math and Implementation CSP](#2-math-and-implementation-csp)
 3. [Math and Implementation LDA](#3-math-and-implementation-lda)
 4. [CSP + LDA Pipeline](#4-csp-lda-pipeline)
-5. [Math and Implementation CNNs](#5-Math and Implementation-cnns)
-5. [Math and Implementation CNNs](#5-Math and Implementation-cnns)
+5. [Math and Implementation CNNs](#5-math-and-implementation-cnns)
+6. [CNN Pipeline](#6-cnn-pipeline)
 
 **Setup and Usage**
 - coming soon
 
 ---
 
-## Current Stage: 5: Implement CNNs on Calibration 
+## Current Stage: 5: Understand math, logic and toy implementations of CNNs
 
 
 
@@ -74,4 +74,7 @@ Refer to `understand_LDA` folder for indepth knowledge behind LDA.
 ## 5: Math and Implementation CNNs
 - [ ] CNNs Logic, Math and Toy implementation
 - [ ] Train CNNs on calibration data
+
+## 6: CNN Pipeline
+- [ ] Stage not reached yet
 
